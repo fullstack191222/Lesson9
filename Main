@@ -1,0 +1,79 @@
+import banks.Bank;
+import banks.BankA;
+import banks.BankB;
+import banks.BankC;
+import language.Java;
+import language.Language;
+import shapes.Circle;
+import shapes.Shape;
+import shapes.Square;
+import zoo.Animal;
+import zoo.Cat;
+import zoo.Dog;
+import zoo.Labrador;
+
+public class Main {
+    public static void main(String[] args) {
+
+        //exercise
+        //Create an abstract class 'Bank' with an abstract method 'getBalance'.
+        // Create three sub classes 'BankA', 'BankB' and 'BankC'
+        // are subclasses of class 'Bank', each having a method named 'getBalance'.
+        //BankA --> $100, BankB --> $150 and Bank C --> print $200
+        //in main create three banks and call for each one method getBalance.
+    /*    BankA bankA = new BankA();
+        BankB bankB = new BankB();
+        BankC bankC = new BankC();
+        bankA.getBalance();
+        bankB.getBalance();
+        bankC.getBalance();
+*/
+
+
+/*
+        //dog= new Animal(15, 10, "First");
+        Cat kitty= new Cat(10, 3, "kitty");
+        Dog doggy = new Dog(2,10, "doggy");
+
+        Animal[] animals = {kitty, doggy};
+//        Animal cat = animals[0]; // cat.
+//        Animal dog = animals[1];//dog.
+
+        for (int i = 0; i < animals.length; i++) {
+
+            animals[i].saySomething();
+            if (animals[i] instanceof Dog) {
+                ((Dog) animals[i]).bark();
+            }
+            if (animals[i] instanceof Cat) {
+                ((Cat) animals[i]).printAll();
+            }
+
+        }*/
+/*
+        Language java = new Java();
+        String type = java.getType();
+        String version = java.getVersion();*/
+
+        ///Create interface called Shape.
+        // double getArea();
+        // double getPerimeter();
+        //Two classes which implements Shape.
+        //1 class Circle . one field radius private. and implementation
+        // of getArea and getPerimeter
+        //2. Class Square  two fields width and length.
+        //implementation of the methods.
+        //don't forget constructors Circle constructor with one input (radius)
+        //Square constructor with two fields (Width length)
+        //don't forget all fields are private + getters and setters.
+        // area in circle = 3.14*(radius^2)
+        // perimeter of circle = 2pr = 2*3.14*radius
+        // area of square  length*width.
+        // perimeter of the square 2*width + 2*length
+        Shape circle = new Circle(20);
+        Shape square = new Square(10, 5);
+        System.out.println("Circle area is : " + circle.getArea() + " circle perimeter is: " + circle.getPerimeter());
+        System.out.println("Square area is : " + square.getArea() + " square perimeter is: " + square.getPerimeter());
+
+    }
+}
