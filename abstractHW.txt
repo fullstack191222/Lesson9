@@ -1,0 +1,30 @@
+1.Define an abstract class called Shape. This class should have two abstract methods: area() and perimeter(). These methods should not have a body and should be declared as public.
+
+Create a subclass of Shape called Circle. This class should have a constructor that takes a radius as a parameter. It should also implement the area() and perimeter() methods, which should return the area and perimeter of the circle, respectively.
+
+Create another subclass of Shape called Rectangle. This class should have a constructor that takes the length and width of the rectangle as parameters. It should also implement the area() and perimeter() methods, which should return the area and perimeter of the rectangle, respectively.
+
+Create a Main class that instantiates objects of both Circle and Rectangle. It should call the area() and perimeter() methods on each object and print out the results.
+
+
+
+2. Create an interface called Resizable with two abstract methods: double resize(int percent) and double resize(int width, int height).
+
+Create an abstract class called Shape.
+
+Inside the Shape class, create two protected instance variables for storing the width and height of the shape.
+
+Create a constructor for the Shape class that takes in two parameters for the width and height of the shape and sets the instance variables accordingly.
+
+Create two concrete methods in the Shape class called getWidth() and getHeight() that return the width and height of the shape, respectively.
+
+Modify the Shape class to implement the Resizable interface. Implement the resize(int percent) method to resize the shape by a certain percentage. Implement the resize(int width, int height) method to resize the shape to a specific width and height.
+
+Create two subclasses of Shape called Rectangle and Circle.
+
+In each subclass, create a constructor that takes in the necessary parameters to initialize the width and height of the shape.
+
+Override the getWidth() and getHeight() methods in each subclass to return the appropriate values for the specific shape.
+
+Override the resize(int percent) and resize(int width, int height) methods in each subclass to resize the shape in the appropriate way for that shape.
+
